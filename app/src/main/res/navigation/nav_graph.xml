@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaIncidenciasFragment">
+
+    <fragment
+        android:id="@+id/listaIncidenciasFragment"
+        android:name="com.example.dispositivos.ui.ListaIncidenciasFragment"
+        android:label="Lista de Incidencias"
+        tools:layout="@layout/fragment_lista_incidencias">
+        <action
+            android:id="@+id/action_listaIncidenciasFragment_to_detalleIncidenciaFragment"
+            app:destination="@id/detalleIncidenciaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleIncidenciaFragment"
+        android:name="com.example.dispositivos.ui.DetalleIncidenciaFragment"
+        android:label="Detalle de Incidencia"
+        tools:layout="@layout/fragment_detalle_incidencia">
+        <argument
+            android:name="incidencia"
+            app:argType="com.example.dispositivos.data.model.Incidencia" />
+    </fragment>
+</navigation>
