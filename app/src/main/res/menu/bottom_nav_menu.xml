@@ -4,4 +4,8 @@
         android:id="@+id/listaIncidenciasFragment"
         android:icon="@android:drawable/ic_menu_agenda"
         android:title="@string/menu_incidencias" />
+    <item
+        android:id="@+id/estadisticasFragment"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/menu_estadisticas" />
 </menu>

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Dispositivos</string>
     <string name="menu_incidencias">Incidencias</string>
+    <string name="menu_estadisticas">Estadísticas</string>
+    <string name="resumen_incidencias">Resumen de Incidencias</string>
+    <string name="total_incidencias">Total de Incidencias: 4</string>
+    <string name="abiertas_incidencias">Abiertas / En Proceso: 3</string>
+    <string name="resueltas_incidencias">Resueltas: 1</string>
 </resources>

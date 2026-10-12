@@ -24,4 +24,10 @@
             android:name="incidencia"
             app:argType="com.example.dispositivos.data.model.Incidencia" />
     </fragment>
+
+    <fragment
+        android:id="@+id/estadisticasFragment"
+        android:name="com.example.dispositivos.ui.EstadisticasFragment"
+        android:label="Estadísticas"
+        tools:layout="@layout/fragment_estadisticas" />
 </navigation>
