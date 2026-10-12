@@ -7,9 +7,14 @@ import com.example.dispositivos.data.model.Incidencia
 import com.example.dispositivos.databinding.ItemIncidenciaBinding
 
 class IncidenciaAdapter(
-    private val incidencias: List<Incidencia>,
+    private var incidencias: List<Incidencia>,
     private val onIncidenciaClick: (Incidencia) -> Unit
 ) : RecyclerView.Adapter<IncidenciaAdapter.IncidenciaViewHolder>() {
+
+    fun actualizarLista(nuevaLista: List<Incidencia>) {
+        incidencias = nuevaLista
+        notifyDataSetChanged()
+    }
 
     inner class IncidenciaViewHolder(private val binding: ItemIncidenciaBinding) :
         RecyclerView.ViewHolder(binding.root) {
